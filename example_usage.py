@@ -18,11 +18,11 @@ def example_basic_usage():
     predictor = F1Predictor()
     
     if predictor.model is None:
-        print("❌ Model not loaded. Please ensure model files are in the current directory.")
+        print("Model not loaded. Please ensure model files are in the current directory.")
         return
     
     # Example 1: Single driver prediction
-    print("\n📊 Example 1: Single Driver Prediction")
+    print("\nExample 1: Single Driver Prediction")
     print("-" * 30)
     
     driver_data = {
@@ -66,7 +66,7 @@ def example_race_prediction():
     predictor = F1Predictor()
     
     if predictor.model is None:
-        print("❌ Model not loaded.")
+        print(" Model not loaded.")
         return
     
     # Example race data for British Grand Prix
@@ -151,7 +151,7 @@ def example_race_prediction():
 
 def example_huggingface_usage():
     """Example of using the model from Hugging Face Hub"""
-    print("\n🤗 Example 3: Hugging Face Hub Usage")
+    print("\nExample 3: Hugging Face Hub Usage")
     print("-" * 30)
     
     try:
@@ -170,7 +170,7 @@ def example_huggingface_usage():
         model = joblib.load(model_path)
         scaler = joblib.load(scaler_path)
         
-        print("✅ Model loaded successfully from Hugging Face Hub!")
+        print("Model loaded successfully from Hugging Face Hub!")
         
         # Create predictor with loaded model
         predictor = F1Predictor()
@@ -196,7 +196,7 @@ def example_huggingface_usage():
         print(f"Podium Probability: {prediction['podium_probability']:.2%}")
         
     except Exception as e:
-        print(f"❌ Error loading from Hugging Face Hub: {e}")
+        print(f"Error loading from Hugging Face Hub: {e}")
         print("Note: Replace 'your-username' with your actual Hugging Face username")
 
 def example_api_usage():
@@ -209,7 +209,7 @@ def example_api_usage():
     predictor = F1Predictor()
     
     if predictor.model is None:
-        print("❌ Model not loaded.")
+        print("Model not loaded.")
         return
     
     # Simple API call
@@ -235,7 +235,7 @@ def example_api_usage():
 
 def main():
     """Run all examples"""
-    print("🏎️ F1 2025 Race Predictor - Complete Usage Examples")
+    print(" F1 2025 Race Predictor - Complete Usage Examples")
     print("=" * 60)
     
     # Run examples
@@ -245,7 +245,7 @@ def main():
     example_api_usage()
     
     print("\n" + "=" * 60)
-    print("✅ All examples completed!")
+    print("All examples completed!")
     print("\nNext steps:")
     print("1. Customize the examples for your specific use case")
     print("2. Integrate with your application")
